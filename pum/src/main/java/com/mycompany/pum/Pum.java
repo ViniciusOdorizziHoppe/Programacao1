@@ -11,7 +11,7 @@ import java.util.Date;
  * @author Vinícius
  */
 public class Pum {
-    public class Estudante {
+   
         private String nome;
         private Date dataNascimento;
         private String cpf;
@@ -19,20 +19,21 @@ public class Pum {
         private String matricula;
         private String email;
         
-        public int obterIdade(Date hoje) {
+        private int obterIdade(Date hoje) {
             int idade = 0;
             return idade;
         }
-        public Estudante() {
+        public Pum() {
             nome = "Nobody";
         }
         
         public String getNome(){
+            obterIdade(new Date());
             return nome;
         }
         
         public void setNome(String _nome) {
             nome = _nome;
         }
-    }
+    
 }
