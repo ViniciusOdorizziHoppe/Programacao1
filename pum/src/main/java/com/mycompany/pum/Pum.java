@@ -6,13 +6,9 @@ package com.mycompany.pum;
 
 import java.util.Date;
 
-/**
- *
- * @author Vinícius
- */
-public class Pum {
+class Pum {
    
-        private String nome;
+        private static String nome;
         private Date dataNascimento;
         private String cpf;
         private char genero;
@@ -27,12 +23,11 @@ public class Pum {
             nome = "Nobody";
         }
         
-        public String getNome(){
-            obterIdade(new Date());
+        public static String getNome(){
             return nome;
         }
         
-        public void setNome(String _nome) {
+        public static void setNome(String _nome) {
             nome = _nome;
         }
     
