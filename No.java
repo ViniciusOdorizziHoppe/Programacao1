@@ -38,12 +38,15 @@ public class No {
         this.prox = prox;
     }
 
-    
+     
     public boolean equals(Object obj) {
-        return super.equals(obj); 
+        No noaux = (No)obj; 
+        if (this.codigo == noaux.getCodigo()) {
+            return true;
+        }else {
+            return false;
+        }
     }
-    
-    
     
         
 }
